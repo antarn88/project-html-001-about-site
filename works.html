@@ -1,13 +1,67 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Works</title>
 </head>
+
 <body>
     <script src="js/header.js"></script>
-    <h1>Works</h1>
+    <main class="main-container">
+        <section class="project-box">
+            <header class="project-box-title">
+                <p>Shower</p>
+            </header>
+            <div class="project-box-content">
+                <div class="project-box-photo">
+                    <img src="./img/shower-screenshot.png" alt="Shower screenshot">
+                </div>
+                <div class="project-box-description">
+                    <p>Egy Pythonban és a PySide2 keretrendszer segítségével írt desktop alkalmazás, amely fájlok
+                        titkosítására, és annak visszafejtésére használható. Az alkalmazás AES titkosítást használ CFB
+                        móddal. Ennek segítségével megóvhatjuk privát fájljainkat. Titkosításkor a program generál egy
+                        random, egyedi 32 karakter hosszú kulcsot, amit visszafejtésnél meg kell adni! Ennek hiányában
+                        nem lehet majd a fájlt helyreállítani.</p>
+                </div>
+            </div>
+        </section>
+        <section class="project-box">
+            <header class="project-box-title">
+                <p>Network Assistant</p>
+            </header>
+            <div class="project-box-content">
+                <div class="project-box-photo">
+                    <img src="./img/network-assistant-screenshot.png" alt="Network Assistant screenshot">
+                </div>
+                <div class="project-box-description">
+                    <p>Egy szintén Pythonban írt app, PySide2 grafikus környezettel. Célja, hogy megkönnyítse az
+                        alapvető hálózati számításokat. A legfontosabb feature-ök megtalálhatóak benne, mint például: IP
+                        információk, szám konvertálás, IP alhálózat-számítás vagy éppen VLSM. Az alkalmazás elérhető
+                        angol és magyar nyelven is.</p>
+                </div>
+            </div>
+        </section>
+        <section class="project-box">
+            <header class="project-box-title">
+                <p>Gyogyszerfelíratás</p>
+            </header>
+            <div class="project-box-content">
+                <div class="project-box-photo">
+                    <img src="./img/gyogyszerfeliratas-project.png" alt="Gyógyszerfelíratás screenshot">
+                </div>
+                <div class="project-box-description">
+                    <p>Egy HTML/CSS/JS miniapp, aminek a segítségével könnyedén elkészíthetjük a gyógyszerfelíratási
+                        listánkat. Támogat különböző személyes profilokat, amiben megadjuk a személyes adatainkat, majd
+                        felvehetjük a szedett gyógyszereinket. Később betöltjük a személyes profilt, majd bejelöljük,
+                        hogy milyen gyógyszerekre van szükségünk, ezután két kattintással ki is tudjuk nyomtatni azt.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="js/footer.js"></script>
 </body>
+
 </html>
