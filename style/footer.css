@@ -1,0 +1,15 @@
+#footer {
+    background-color: lightslategrey;
+    text-align: center;
+}
+
+#footer a {
+    display: inline-block;
+    font-size: 35px;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}

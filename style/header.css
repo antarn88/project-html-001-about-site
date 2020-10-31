@@ -1,0 +1,94 @@
+#header {
+    background-color: mediumseagreen;
+}
+
+.navbar label,
+input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#header label:first-child {
+    color: rgba(0, 0, 0, .5);
+    text-decoration: none;
+    padding: 20px;
+}
+
+.navbar a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+.navbar a:hover {
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+}
+
+.navbar .mobile-menu-button {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    padding: 10px;
+    margin: 7.5px 5px 0 0;
+}
+
+.navbar .mobile-menu-button span {
+    display: block;
+    height: 4px;
+    background-color: white;
+    margin: 0 0 5px 0;
+    border-radius: 2px;
+}
+
+.navbar .mobile-menu-button span:last-of-type {
+    margin: 0;
+}
+
+.navbar #mobile-menu-checkbox {
+    display: none;
+}
+
+.navbar #mobile-menu-checkbox:checked~a {
+    display: block;
+}
+
+/* Ha kisebb a felbontás, mint 800 pixel */
+@media (max-width:800px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        display: none;
+        padding: 14px;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+    }
+
+    .navbar label:first-child {
+        text-align: center;
+    }
+
+    .navbar .mobile-menu-button {
+        display: block;
+    }
+
+    .navbar label,
+    input[type="checkbox"] {
+        position: unset;
+    }
+
+
+}

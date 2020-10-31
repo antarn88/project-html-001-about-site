@@ -29,10 +29,14 @@ function formValidator() {
 function emailSender() {
     let senderName = name.value;
     let senderAddress = email.value;
-    let myEmail = "antaloczi.arnold@gmail.com";
+    let e = "olg.acn@taiidnmz.laaorclom";
+    let myEmail = `${e[4]}${e[6]}${e[8]}${e[4]}${e[1]}${e[0]}${e[5]}${e[15]}${e[10]}${e[3]}${e[4]}${e[21]}${e[6]}${e[0]}${e[1]}${e[12]}${e[7]}${e[2]}${e[14]}${e[4]}${e[10]}${e[1]}${e[3]}${e[5]}${e[0]}${e[14]}`;
     let emailSubject = escape(`Message from ${senderName} (${senderAddress})`);
     let messageBody = escape(message.value);
     let a = document.createElement("a");
     a.setAttribute("href", `mailto:${myEmail}?subject=${emailSubject}&body=${messageBody}`);
     a.click();
+    name.value = "";
+    email.value = "";
+    message.value = "";
 }

@@ -18,7 +18,7 @@ for (let i = 0; i < 3; i++) {
 }
 
 const navbar = document.createElement("nav");
-navbar.setAttribute("id", "navbar");
+navbar.setAttribute("class", "navbar");
 
 const mobileMenu = document.createElement("input");
 mobileMenu.setAttribute("type", "checkbox");
@@ -27,9 +27,9 @@ mobileMenu.setAttribute("id", "mobile-menu-checkbox");
 const websiteName = document.createElement("label");
 websiteName.innerHTML = "Arnold";
 
-header.append(websiteName);
-header.appendChild(mobileMenuButton);
-header.appendChild(mobileMenu);
+navbar.append(websiteName);
+navbar.appendChild(mobileMenuButton);
+navbar.appendChild(mobileMenu);
 header.append(navbar);
 document.body.appendChild(header);
 
