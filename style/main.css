@@ -6,7 +6,7 @@ body {
     margin: 0;
     overflow-y: scroll;
     background-color: steelblue;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: "Titillium Web", sans-serif;
 }
 
 .short-introduction {
@@ -122,5 +122,43 @@ body {
 
 .image-box:hover {
     filter: grayscale();
-    transition: 0.5s;
+    transition: 0.2s;
+}
+
+.profile-photo-container img {
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    max-width: 350px;
+}
+
+.about-me-text-first-part {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.about-me-text-second-part {
+    margin: auto;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    list-style-position: inside;
+    text-align: center;
+}
+
+.send-email-form {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.281);
+}
+
+.send-email-form button {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.send-email-form button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }

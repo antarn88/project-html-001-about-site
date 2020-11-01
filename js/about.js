@@ -20,8 +20,17 @@ function emailValidator() {
     return true;
 }
 
+function messageValidator() {
+    if (message.value.length < 20) {
+        alert("Az üzenet legalább 20 karakter hosszú legyen!");
+        message.focus();
+        return false;
+    }
+    return true;
+}
+
 function formValidator() {
-    if (nameValidator() && emailValidator()) {
+    if (nameValidator() && emailValidator() && messageValidator()) {
         emailSender();
     }
 }
