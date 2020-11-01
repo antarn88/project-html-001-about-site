@@ -5,4 +5,102 @@
 body {
     margin: 0;
     overflow-y: scroll;
+    background-color: steelblue;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.short-introduction {
+    text-align: center;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.photo-box {
+    max-width: 500px;
+}
+
+.photo-box img {
+    border: 1px solid rgba(255, 255, 255, 0.281);
+    max-width: 100%;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgb(34, 65, 90);
+    color: white;
+    padding: 70px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.main-container h1 {
+    text-align: center;
+}
+
+.virtue-box-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.virtue-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    height: 125px;
+    border: 1px solid rgba(255, 255, 255, 0.281);
+    border-radius: 5px;
+    text-align: center;
+    margin: 15px;
+    padding: 25px;
+}
+
+.virtue-box:hover {
+    background-color: darkgreen;
+    box-shadow: 0px 0px 8px 0px #888888;
+    transition: 0.2s;
+}
+
+.project-box {
+    margin-bottom: 50px;
+}
+
+.project-box-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-box-photo {
+    min-width: 350px;
+    max-width: 550px;
+    margin-bottom: 20px;
+}
+
+.project-box-photo img {
+    max-width: 100%;
+}
+
+.project-box-text {
+    border: 1px solid rgba(255, 255, 255, 0.281);
+    padding: 30px;
+    max-width: 400px;
+    margin-bottom: 50px;
+}
+
+.project-box-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.project-box-description {
+    text-align: justify;
 }
