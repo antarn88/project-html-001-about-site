@@ -42,6 +42,7 @@ body {
 
 .main-container h1 {
     text-align: center;
+    padding-bottom: 50px;
 }
 
 .virtue-box-container {
@@ -91,7 +92,7 @@ body {
 
 .project-box-text {
     border: 1px solid rgba(255, 255, 255, 0.281);
-    padding: 30px;
+    padding: 20px;
     max-width: 400px;
     margin-bottom: 50px;
 }
@@ -103,4 +104,23 @@ body {
 
 .project-box-description {
     text-align: justify;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-box img {
+    min-width: 300px;
+    max-width: 320px;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 18px 0px black;
+    border-radius: 5px;
+}
+
+.image-box:hover {
+    filter: grayscale();
+    transition: 0.5s;
 }

@@ -15,4 +15,4 @@ function photoBoxGenerator(amount) {
     }
 }
 
-photoBoxGenerator(21);
+photoBoxGenerator(33);
